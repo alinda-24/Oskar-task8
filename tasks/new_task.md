@@ -1,3 +1,5 @@
+![Task Image](https://oaidalleapiprodscus.blob.core.windows.net/private/org-asPC5Skb6EoE1i324HhdGnV1/user-4VyHdJuNDsg3rdcmO7ghXoi2/img-Ty1fL3hQ5E71TZeLolNQYrNB.png?st=2024-11-06T14%3A01%3A03Z&se=2024-11-06T16%3A01%3A03Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-11-05T19%3A44%3A55Z&ske=2024-11-06T19%3A44%3A55Z&sks=b&skv=2024-08-04&sig=rmSaVg2FcWbXKwUfXkV1iZAu3dDVaL73Cj8hpo89K5E%3D)
+
 # Sci-Fi Themed Game Development Task 🚀🔭
 
 Welcome to an exciting journey through the cosmos of programming! In this task, you will embark on a mission to create a Sci-Fi themed adventure game. This project will challenge your creativity and technical skills, integrating several key programming concepts, including using data from files, designing classes, and programming innovatively. Prepare to code your way through the universe, as you design a game set in a future where technology intersects imagination.
