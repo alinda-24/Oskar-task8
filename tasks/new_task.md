@@ -1,3 +1,5 @@
+![Task Image](https://oaidalleapiprodscus.blob.core.windows.net/private/org-asPC5Skb6EoE1i324HhdGnV1/user-4VyHdJuNDsg3rdcmO7ghXoi2/img-h5tz0lkXSW9rOh7YEBSvV4GP.png?st=2024-11-06T14%3A58%3A18Z&se=2024-11-06T16%3A58%3A18Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-11-06T00%3A58%3A42Z&ske=2024-11-07T00%3A58%3A42Z&sks=b&skv=2024-08-04&sig=JWwnuaCabznejdlzBPYH0a%2Be6wpXE88Ng8nWVk/QjTk%3D)
+
 Certainly! Here is a comprehensive task description designed to be engaging and to cover all specified learning goals, with a Sci-Fi-themed game development task. Let's begin!
 
 ---
