@@ -1,3 +1,5 @@
+![Task Image](https://oaidalleapiprodscus.blob.core.windows.net/private/org-asPC5Skb6EoE1i324HhdGnV1/user-4VyHdJuNDsg3rdcmO7ghXoi2/img-vIbF7R55orFNcHPjIwCZWf88.png?st=2024-11-07T10%3A13%3A19Z&se=2024-11-07T12%3A13%3A19Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-11-07T06%3A42%3A30Z&ske=2024-11-08T06%3A42%3A30Z&sks=b&skv=2024-08-04&sig=7R6botYKwd5fqrLcrC7gQ6fm/7ZuroitzT23rtg8BHY%3D)
+
 ## Task: Sci-fi Spaceship Repair Game 🚀
 
 Welcome to your programming challenge! In this task, you'll design and develop a Sci-fi themed text-based game set within the confines of a spaceship. Your mission is to create a game where the player must navigate through various rooms on a spaceship to repair it before time runs out. This task will help you understand the concepts of using data from files to instantiate objects, designing classes, and programming creatively.
