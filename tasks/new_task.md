@@ -1,3 +1,5 @@
+![Task Image](https://oaidalleapiprodscus.blob.core.windows.net/private/org-asPC5Skb6EoE1i324HhdGnV1/user-4VyHdJuNDsg3rdcmO7ghXoi2/img-CBuN7fzZksHfodXCPO3NxQ0E.png?st=2024-11-07T13%3A26%3A25Z&se=2024-11-07T15%3A26%3A25Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-11-07T11%3A52%3A32Z&ske=2024-11-08T11%3A52%3A32Z&sks=b&skv=2024-08-04&sig=f5v%2By2x1zE7VTa2lGBybmJ66fEw/r9X8qRe1GZxbYWo%3D)
+
 ### Task: **Fantasy Library Adventure System**
 
 Welcome to the Fantasy Library Adventure System task! In this task, you will explore the fascinating world of using data from files, designing classes, and creative programming to bring a fantasy library to life. You will develop a Java program that simulates a library of magical books, where each book holds unique spells, stories, and mysteries! Let's embark on this magical journey and deepen your understanding of object-oriented programming concepts.
