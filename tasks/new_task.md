@@ -1,3 +1,5 @@
+![Task Image](https://oaidalleapiprodscus.blob.core.windows.net/private/org-asPC5Skb6EoE1i324HhdGnV1/user-4VyHdJuNDsg3rdcmO7ghXoi2/img-ZPvTxKBEKRClyCSV7OLd9D2A.png?st=2024-11-07T16%3A31%3A56Z&se=2024-11-07T18%3A31%3A56Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-11-07T04%3A23%3A33Z&ske=2024-11-08T04%3A23%3A33Z&sks=b&skv=2024-08-04&sig=RjJjYd53QNG5vUprzRzSxRp91nRwEjKy2N2yzDL8mHQ%3D)
+
 ### 🎓 Programming Task: Dynamic Story Generation
 
 #### **Theme:** Dynamic Adventure Tale
