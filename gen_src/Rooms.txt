@@ -1,0 +1,17 @@
+Room;Quarters;You are in the crews quarters. The ship is in disrepair and you need to fix it.
+Room;Hall;You have entered the main hall. There might be some tools laying around.
+Room;Storage;You are in the storage room. It is cold and dark in here.
+Room;Engine; You are in the engine room. 
+Room;Bridge; You are in the bridge, where the ship is controlled.
+Exit;Quarters;east;Hall
+Exit;Hall;north;Bridge
+Exit;Hall;south;Storage
+Exit;Hall;west;Quarters
+Exit;Bridge;south;Hall
+Exit;Storage;north;hall;
+Exit;Storage;east;engine
+Exit;Engine;west;storage
+RepairTool;Hall;Catalyser;engine
+RepairTool;Storage;Robot;navigation
+Objective;Bridge;navigation
+Objective;Engine;engine
