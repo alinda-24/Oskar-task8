@@ -1,64 +1,18 @@
-
+// GameState.java
 public class GameState {
-
     private Room currentRoom;
-    private RepairTool holdingRepairTool;
-    private int objectiveAmount;
-    private int completedObjectives;
-    private boolean failed;
-
 
     public GameState(Room startingRoom) {
-        this.currentRoom = startingRoom;
-        objectiveAmount = 0;
-        completedObjectives = 0;
-        holdingRepairTool = null;
-        failed = false;
+        // Constructor
     }
 
     public Room getCurrentRoom() {
-        return currentRoom;
+        // Method signature
     }
 
     public void setCurrentRoom(Room currentRoom) {
-        this.currentRoom = currentRoom;
+        // Method signature
     }
-
-    public RepairTool getHoldingRepairTool() {
-        return holdingRepairTool;
-    }
-
-    public void setHoldingRepairTool(RepairTool newRepairTool) {
-        holdingRepairTool = newRepairTool;
-    }
-
-    public void dropHoldingRepairTool() {
-        holdingRepairTool = null;
-    }
-
-    public int getObjectiveAmount() {
-        return objectiveAmount;
-    }
-
-    public void addObjectiveAmount() {
-        objectiveAmount++;
-    }
-
-    public int getCompletedObjectives() {
-        return completedObjectives;
-    }
-
-    public void addCompletedObjectives() {
-        completedObjectives++;
-    }
-
-    public void setFailed(boolean failed) {
-        this.failed = failed;
-    }
-
-    public boolean isFailed() {
-        return failed;
-    }
-
-
 }
+
+// You need to have a definition for the Room class for this to compile. Assuming there is another file named Room.java for the Room class definition.

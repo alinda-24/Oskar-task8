@@ -3,29 +3,23 @@ public class RepairTool {
     private String name;
     private String functionality;
 
-    // Constructor
     public RepairTool(String name, String functionality) {
-        this.name = name;
-        this.functionality = functionality;
+        // Constructor
     }
 
-    // Getter for name
     public String getName() {
-        return name;
+        // Get name
     }
 
-    // Setter for name
     public void setName(String name) {
-        this.name = name;
+        // Set name
     }
 
-    // Getter for functionality
     public String getFunctionality() {
-        return functionality;
+        // Get functionality
     }
 
-    // Setter for functionality
     public void setFunctionality(String functionality) {
-        this.functionality = functionality;
+        // Set functionality
     }
 }
