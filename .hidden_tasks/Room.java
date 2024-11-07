@@ -24,7 +24,7 @@ public class Room {
     }
 
     public void printExits() {
-        System.out.print("Exits available: ");
+        System.out.print("There are exits in the directions: ");
         for (String direction : exits.keySet())
             System.out.print(direction + " ");
         System.out.println();
