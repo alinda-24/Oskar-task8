@@ -1,52 +1,30 @@
 // Room.java
+
 import java.util.Map;
 import java.util.HashMap;
 
 public class Room {
-    private Map<String, Room> exits = new HashMap<>();
+    private Map<String, Room> exits;
     private String description;
-    private RepairTool repairTool;
-    private Objective objective;
 
     public Room(String description) {
-     this.description = description;
+        // Constructor
     }
 
     public void addExit(String direction, Room toRoom) {
-        exits.put(direction, toRoom);
-    }
-
-    public void addRepairTool(RepairTool repairTool) {
-        this.repairTool = repairTool;
-    }
-
-    public void removeRepairTool() {
-        this.repairTool = null;
-    }
-
-    public void addObjective(Objective objective) {
-        this.objective = objective;
+        // Add an exit
     }
 
     public Room go(String direction) {
-        Room enterRoom = exits.get(direction);
-        if (exits.get(direction) == null) {
-            System.out.println("Try not to walk into the walls. You might break the ship... or yourself.");
-            printExits();
-        }
-        return enterRoom;
+        // Return the room in the given direction
+        return null;
     }
 
     public void printExits() {
-        System.out.println("There are sliding spaceship doors in the directions: ");
-        for (String direction : exits.keySet()) {
-            System.out.println(direction);
-            System.out.println();
-        }
+        // Print available exits
     }
 
     public void lookAround() {
-        System.out.println(description);
-        printExits();
+        // Describe the current room and its exits
     }
 }
