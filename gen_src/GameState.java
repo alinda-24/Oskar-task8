@@ -5,12 +5,15 @@ public class GameState {
     private RepairTool holdingRepairTool;
     private int objectiveAmount;
     private int completedObjectives;
-    
+    private boolean failed;
+
 
     public GameState(Room startingRoom) {
         this.currentRoom = startingRoom;
         objectiveAmount = 0;
         completedObjectives = 0;
+        holdingRepairTool = null;
+        failed = false;
     }
 
     public Room getCurrentRoom() {
@@ -21,13 +24,17 @@ public class GameState {
         this.currentRoom = currentRoom;
     }
 
-    public RepairTool getHoldingRepairTool () {
+    public RepairTool getHoldingRepairTool() {
         return holdingRepairTool;
     }
 
     public void setHoldingRepairTool(RepairTool newRepairTool) {
         holdingRepairTool = newRepairTool;
-    } 
+    }
+
+    public void dropHoldingRepairTool() {
+        holdingRepairTool = null;
+    }
 
     public int getObjectiveAmount() {
         return objectiveAmount;
@@ -45,6 +52,13 @@ public class GameState {
         completedObjectives++;
     }
 
+    public void setFailed(boolean failed) {
+        this.failed = failed;
+    }
+
+    public boolean isFailed() {
+        return failed;
+    }
+
 
 }
-```

@@ -1,9 +1,14 @@
 public class Objective {
     private String name;
+    private String description;
+
+
     private boolean completed;
 
-    public Objective (String name) {
+
+    public Objective(String name, String description) {
         this.name = name;
+        this.description = description;
         this.completed = false;
     }
 
@@ -25,5 +30,8 @@ public class Objective {
         this.completed = completed;
     }
 
+    public String getDescription() {
+        return description;
+    }
 
 }

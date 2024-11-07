@@ -2,7 +2,6 @@
 public class RepairTool {
     private String name;
     private String functionality;
-    
 
     // Constructor
     public RepairTool(String name, String functionality) {
@@ -23,7 +22,7 @@ public class RepairTool {
     // Getter for functionality
     public String getFunctionality() {
         return functionality;
-    }   
+    }
 
     // Setter for functionality
     public void setFunctionality(String functionality) {
