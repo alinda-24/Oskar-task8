@@ -1,99 +1,180 @@
-![Task Image](https://oaidalleapiprodscus.blob.core.windows.net/private/org-asPC5Skb6EoE1i324HhdGnV1/user-4VyHdJuNDsg3rdcmO7ghXoi2/img-vIbF7R55orFNcHPjIwCZWf88.png?st=2024-11-07T10%3A13%3A19Z&se=2024-11-07T12%3A13%3A19Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-11-07T06%3A42%3A30Z&ske=2024-11-08T06%3A42%3A30Z&sks=b&skv=2024-08-04&sig=7R6botYKwd5fqrLcrC7gQ6fm/7ZuroitzT23rtg8BHY%3D)
+# 🌟 Creative Object-Oriented Programming with File-Driven Data
 
-## Task: Sci-fi Spaceship Repair Game 🚀
+Welcome to this comprehensive task designed to hone your skills in Java programming through a creative and practical approach. This task will guide you through reading data from files to instantiate objects, designing classes, and encouraging creative problem-solving in programming. This process will simulate an application where you might dynamically handle data from external sources, enhancing both your technical and creative coding skills. Let’s get started!
 
-Welcome to your programming challenge! In this task, you'll design and develop a Sci-fi themed text-based game set within the confines of a spaceship. Your mission is to create a game where the player must navigate through various rooms on a spaceship to repair it before time runs out. This task will help you understand the concepts of using data from files to instantiate objects, designing classes, and programming creatively.
+---
 
-### Objective
-
-- **Theme**: Create a Sci-fi game where players move through rooms in a spaceship. The player's goal is to repair the ship by visiting specific rooms and taking corrective actions.
-
-### Learning Goals
+## 🎯 Learning Goals
 
 1. **Using Data from Files to Instantiate Objects**
-   - Understanding file formats and parsing techniques for data extraction.
-   - Using file I/O classes to read data and convert it into object attributes.
-   - Handling exceptions and ensuring data integrity during object instantiation.
+   - Understand file formats and parsing techniques for data extraction.
+   - Master file I/O classes to read data and convert it into object attributes.
+   - Handle exceptions and ensure data integrity during object instantiation.
 
 2. **Designing Classes**
-   - Identifying class responsibilities and defining clear interfaces.
-   - Implementing cohesive class structures with appropriate fields and methods.
-   - Leveraging design patterns to enhance class design.
+   - Identify class responsibilities and define clear interfaces.
+   - Implement cohesive class structures with appropriate fields and methods.
+   - Leverage design patterns to solve common problems and enhance class design.
 
 3. **Programming Creatively**
-   - Exploring different approaches to problem-solving.
-   - Encouraging experimentation and iteration to refine solutions.
-   - Integrating user feedback and testing to improve program effectiveness.
+   - Explore different approaches to problem-solving and algorithm design.
+   - Encourage experimentation and refine solutions.
+   - Integrate user feedback and conduct meaningful tests to improve program effectiveness and usability.
 
-### Exercises
+---
 
-#### Exercise 1: Theoretical Foundation of File I/O 📂
-- **Objective**: Understand the basics of file I/O operations in Java, essential for setting up dynamic data handling.
-- **Task**: 
-  - **Q1**: Explain the importance of file I/O in Java and list the common classes used for reading and writing files.
-  - **Q2**: Describe two scenarios in a spaceship-themed game where using file input/output could enhance gameplay.
+## 📚 Exercise 1: Understanding File Formats and Parsing
 
-#### Exercise 2: Principles of Class Design 📐
-- **Objective**: Study the principles that underlie effective class design in Java.
-- **Task**: 
-  - **Q1**: What are class responsibilities, and why are they important in object-oriented programming?
-  - **Q2**: Discuss common design patterns that can be beneficial in the architecture of a spaceship game.
+**Objective:** Gain a theoretical understanding of various file formats and parsing techniques.
 
-#### Exercise 3: Implementing File-Based Room Initialization 🗂️
-- **Objective**: Use file data to dynamically create room objects within your game's spaceship environment.
-- **Task**:
-  - **Description**: Create a method `generateSpaceshipLayout` that reads a text file to set up the spaceship's rooms.
-    - File Format: One line per room specifying `'Room;RoomName;Description'`.
-    - Another with `'Exit;FromRoom;Direction;ToRoom'`.
-  - **Code Snippet**:
+**Instructions:**
 
-    ```java
-    private void generateSpaceshipLayout(String filename) {
-        // Implement the method to read room and exit configuration from a file
-    }
-    ```
+- Research common file formats used in programming (e.g., CSV, JSON, XML).
+- Explore different parsing techniques and tools available in Java for these file formats.
+- Discuss the advantages and disadvantages of each format and parsing strategy.
 
-#### Exercise 4: Designing Game-Specific Classes 🛠️
-- **Objective**: Create custom classes that represent game-specific entities within the spaceship.
-- **Task**:
-  - **Code Snippet**: Define a class `RepairTool` representing tools needed to fix the spaceship.
+**Questions:**
 
-    ```java
-    public class RepairTool {
-        private String name;
-        private String functionality;
+1. What are the key differences between JSON, XML, and CSV formats?
+2. Explain how you might parse a CSV file in Java. What libraries or classes could you use?
 
-        public RepairTool(String name, String functionality) {
-            this.name = name;
-            this.functionality = functionality;
+---
+
+## 📘 Exercise 2: Class Design Principles
+
+**Objective:** Deepen your understanding of class design principles.
+
+**Instructions:**
+
+- Review the principles of class design, including solid principles and design patterns.
+- Analyze the potential impact of design patterns on class design.
+
+**Questions:**
+
+1. How do solid principles influence the design of classes in object-oriented programming?
+2. Explain a design pattern you have studied and how it can be applied in class design.
+
+---
+
+## 🛠️ Exercise 3: Reading Data from Files in Java
+
+**Objective:** Implement a basic program that reads data from a file and parses it.
+
+**Instructions:**
+
+- Create a small Java program that reads a CSV file containing a list of books with their titles, authors, and publication years.
+- Implement logic to parse this data and print each book's details to the console.
+
+**Starter Code Snippet:**
+
+```java
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class BookReader {
+    public static void main(String[] args) {
+        String filePath = "books.csv";
+        String line;
+        try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
+            while ((line = br.readLine()) != null) {
+                String[] bookData = line.split(",");
+                System.out.println("Title: " + bookData[0] + ", Author: " +
+                                   bookData[1] + ", Year: " + bookData[2]);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
         }
-        
-        // Getter and Setter methods
     }
-    ```
+}
+```
 
-#### Exercise 5: Integrating Tools and Gameplay Mechanics ⚙️
-- **Objective**: Integrate your custom tools into the game mechanics, allowing interaction.
-- **Task**:
-  - Develop a gameplay feature where certain rooms contain repair tools necessary for fixing the spaceship.
-  - Ensure the player must pick up and use these tools within rooms.
+---
 
-#### Exercise 6: Complete Game Creation and Testing 🧩
-- **Objective**: Combine all elements to create a fully functional game with a win/lose condition.
-- **Steps**:
-  - Implement the logic for 'repairing' the spaceship.
-  - Add a win condition when repairs are completed within specific rounds.
-  - Create a README with a game map and a description of how to play.
+## 🏗️ Exercise 4: Designing a Book Class
 
-### Submission
+**Objective:** Apply your class design skills to implement a `Book` class.
 
-- Submit a ZIP file containing your code, a room data file, and the README with game documentation and map.
-- Ensure the code is well-documented using Javadoc conventions.
+**Instructions:**
 
-### Tips for Success
+- Design a `Book` class that encapsulates the attributes `title`, `author`, and `year`.
+- Implement constructors, getters, setters, and a `toString()` method.
 
-- Start by understanding the file I/O operations deeply.
-- Design your classes with clear responsibilities.
-- Continuously test each component as you integrate them.
+**Challenge:**
 
-Embark on your cosmic journey and bring the spaceship back to life! 🌌
+- Ensure your class follows solid principles and apply a relevant design pattern if applicable.
+
+---
+
+## 🚀 Exercise 5: Dynamic Book Object Creation
+
+**Objective:** Programmatically create `Book` objects from file data.
+
+**Instructions:**
+
+- Expand on your previous implementation to instantiate `Book` objects from file data.
+- Store these objects in an appropriate collection, such as an `ArrayList`.
+
+**Code Snippet:**
+
+```java
+import java.util.ArrayList;
+import java.util.List;
+
+public class BookLibrary {
+    private List<Book> books;
+
+    public BookLibrary() {
+        books = new ArrayList<>();
+    }
+
+    public void addBook(Book book) {
+        books.add(book);
+    }
+
+    // Additional methods to manage the library
+}
+```
+
+**Step-by-step Tasks:**
+
+1. Modify your file reading logic to create `Book` objects.
+2. Add these objects to an `ArrayList<Book>` in a `BookLibrary` class.
+3. Print the details of all books in the library.
+
+---
+
+## 🌟 Exercise 6: Creative Programming Challenge - Book Library Application
+
+**Objective:** Develop a simple command-line application to manage your book library creatively.
+
+**Instructions:**
+
+- Extend your `BookLibrary` class to include features like searching books by title, sorting books by year, and deleting books.
+- Implement input handling to allow users to interact with your application via the command line.
+
+**Enhancements:**
+
+- Experiment with additional features like saving the library state to a file or loading it at startup.
+- Solicit feedback from a peer and iteratively refine your application based on their input.
+
+**Step-by-step Tasks:**
+
+1. Implement user input handling with a simple menu for library operations.
+2. Add search, sort, and delete functionalities.
+3. Optionally implement save/load functionalities for your library's state.
+
+---
+
+## ✔️ Final Check
+
+Ensure that you:
+
+- Thoroughly comment your code.
+- Use meaningful class and method names.
+- Handle exceptions gracefully, ensuring your application is robust.
+- Test extensively.
+
+This completes your task of using data from files to instantiate objects, designing classes, and creatively programming a functional application. You've harnessed the power of object-oriented programming and file I/O to build a meaningful software solution from scratch. Great job! 🎉
+
+Keep exploring and applying these concepts to solve real-world problems creatively and effectively. Happy coding! 🚀
