@@ -1,99 +1,146 @@
-![Task Image](https://oaidalleapiprodscus.blob.core.windows.net/private/org-asPC5Skb6EoE1i324HhdGnV1/user-4VyHdJuNDsg3rdcmO7ghXoi2/img-vIbF7R55orFNcHPjIwCZWf88.png?st=2024-11-07T10%3A13%3A19Z&se=2024-11-07T12%3A13%3A19Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-11-07T06%3A42%3A30Z&ske=2024-11-08T06%3A42%3A30Z&sks=b&skv=2024-08-04&sig=7R6botYKwd5fqrLcrC7gQ6fm/7ZuroitzT23rtg8BHY%3D)
+# 🏗️ Advanced Object-Oriented Programming: Weather Station Simulation
 
-## Task: Sci-fi Spaceship Repair Game 🚀
+Welcome to the Weather Station Simulation task! In this task, you'll expand your understanding of object-oriented programming while engaging with file I/O operations to create a more dynamic and interactive program. The ultimate goal is to design a weather station application that reads data from a configuration file and simulates varying weather conditions. You'll design classes, manage file I/O operations to instantiate objects, and unlock your creativity by designing an intuitive system.
 
-Welcome to your programming challenge! In this task, you'll design and develop a Sci-fi themed text-based game set within the confines of a spaceship. Your mission is to create a game where the player must navigate through various rooms on a spaceship to repair it before time runs out. This task will help you understand the concepts of using data from files to instantiate objects, designing classes, and programming creatively.
+## 🎯 Learning Goals
 
-### Objective
+- **Using Data from Files to Instantiate Objects**
+  - Master the process of reading and parsing data from files.
+  - Convert this data into meaningful objects.
+  - Ensure robust error handling and data integrity.
 
-- **Theme**: Create a Sci-fi game where players move through rooms in a spaceship. The player's goal is to repair the ship by visiting specific rooms and taking corrective actions.
+- **Designing Classes**
+  - Develop well-structured Java classes.
+  - Define clear class responsibilities and interfaces.
+  - Incorporate design patterns where applicable.
 
-### Learning Goals
+- **Programming Creatively**
+  - Explore creative problem-solving techniques.
+  - Experiment with different features and refine them.
+  - Integrate user feedback to enhance the software experience.
 
-1. **Using Data from Files to Instantiate Objects**
-   - Understanding file formats and parsing techniques for data extraction.
-   - Using file I/O classes to read data and convert it into object attributes.
-   - Handling exceptions and ensuring data integrity during object instantiation.
+## 📝 Exercise 1: Understanding File Formats and Parsing
 
-2. **Designing Classes**
-   - Identifying class responsibilities and defining clear interfaces.
-   - Implementing cohesive class structures with appropriate fields and methods.
-   - Leveraging design patterns to enhance class design.
+**Objective:** Familiarize yourself with different file formats you might encounter in programming tasks, and understand how they can be parsed.
 
-3. **Programming Creatively**
-   - Exploring different approaches to problem-solving.
-   - Encouraging experimentation and iteration to refine solutions.
-   - Integrating user feedback and testing to improve program effectiveness.
+**Instruction:** Answer the following theoretical questions:
 
-### Exercises
+1. **What are common file formats used for data exchange, and what are their characteristics?**
+   - Consider JSON, XML, CSV, and plain text. Discuss the scenarios where each one is best utilized.
 
-#### Exercise 1: Theoretical Foundation of File I/O 📂
-- **Objective**: Understand the basics of file I/O operations in Java, essential for setting up dynamic data handling.
-- **Task**: 
-  - **Q1**: Explain the importance of file I/O in Java and list the common classes used for reading and writing files.
-  - **Q2**: Describe two scenarios in a spaceship-themed game where using file input/output could enhance gameplay.
+2. **Describe techniques to parse data from these file formats.**
+   - Discuss libraries or standard techniques used in Java for handling these file types.
 
-#### Exercise 2: Principles of Class Design 📐
-- **Objective**: Study the principles that underlie effective class design in Java.
-- **Task**: 
-  - **Q1**: What are class responsibilities, and why are they important in object-oriented programming?
-  - **Q2**: Discuss common design patterns that can be beneficial in the architecture of a spaceship game.
+---
 
-#### Exercise 3: Implementing File-Based Room Initialization 🗂️
-- **Objective**: Use file data to dynamically create room objects within your game's spaceship environment.
-- **Task**:
-  - **Description**: Create a method `generateSpaceshipLayout` that reads a text file to set up the spaceship's rooms.
-    - File Format: One line per room specifying `'Room;RoomName;Description'`.
-    - Another with `'Exit;FromRoom;Direction;ToRoom'`.
-  - **Code Snippet**:
+## 📝 Exercise 2: Class Design Concepts
 
-    ```java
-    private void generateSpaceshipLayout(String filename) {
-        // Implement the method to read room and exit configuration from a file
-    }
-    ```
+**Objective:** Strengthen your understanding of class design principles in object-oriented programming.
 
-#### Exercise 4: Designing Game-Specific Classes 🛠️
-- **Objective**: Create custom classes that represent game-specific entities within the spaceship.
-- **Task**:
-  - **Code Snippet**: Define a class `RepairTool` representing tools needed to fix the spaceship.
+**Instruction:** Answer the following theoretical questions:
 
-    ```java
-    public class RepairTool {
-        private String name;
-        private String functionality;
+1. **Explain the S.O.L.I.D. principles of class design.**
+   - Provide a brief description of each principle and how it contributes to effective class design.
 
-        public RepairTool(String name, String functionality) {
-            this.name = name;
-            this.functionality = functionality;
+2. **Discuss how design patterns can improve class structuring.**
+   - Select one design pattern and describe how it enhances class design through separation of concerns.
+
+---
+
+## 💻 Exercise 3: Reading Configuration Files
+
+**Objective:** Practice writing Java code to read configuration files and instantiate objects.
+
+**Task:** Implement a method in Java that reads a configuration file (e.g., `weather_config.txt`) and uses the data to create `WeatherStation` objects.
+
+- The configuration file format:
+  ```
+  WeatherStation;Location;SensorType;Reading
+  WeatherStation;New York;Temperature;22.5
+  WeatherStation;Los Angeles;Humidity;60
+  ```
+
+- **Instructions:**
+  - Write a method `private void loadWeatherStations(String filename)` to parse this file.
+  - Instantiate `WeatherStation` objects with the data.
+  - Handle exceptions and ensure data integrity.
+
+Here's a basic code outline:
+
+```java
+private void loadWeatherStations(String filename) {
+    // Initialize a List<WeatherStation>
+    // Read the file line by line
+    // Parse each line and instantiate WeatherStation objects
+    // Handle exceptions
+}
+```
+
+---
+
+## 💻 Exercise 4: Designing the WeatherStation Class
+
+**Objective:** Apply class design principles to build a robust class structure.
+
+**Task:** Implement the `WeatherStation` class based on the parsed configuration data.
+
+- **Requirements:**
+  - Attributes: `location`, `sensorType`, `reading`
+  - Methods: A constructor, getters, and any utility methods (like `calculateForecast`).
+
+- **Instructions:**
+  - Ensure high cohesion within the class.
+  - Use encapsulation properly.
+
+---
+
+## 🚀 Exercise 5: Extend Functionality with Design Patterns
+
+**Objective:** Use design patterns to enhance your system's flexibility and scalability.
+
+**Task:** Integrate a design pattern to manage different types of sensors (`TemperatureSensor`, `HumiditySensor`, etc.) in the `WeatherStation`.
+
+- **Instructions:**
+  - Implement the Factory Method Pattern to dynamically create sensor objects.
+  - Consider adding feature to simulate sensor failure and recovery.
+
+Here's an outline for the factory:
+
+```java
+public abstract class SensorFactory {
+    public abstract Sensor createSensor(String sensorType);
+}
+
+public class WeatherStationSensorFactory extends SensorFactory {
+    @Override
+    public Sensor createSensor(String sensorType) {
+        switch (sensorType) {
+            case "Temperature":
+                return new TemperatureSensor();
+            case "Humidity":
+                return new HumiditySensor();
+            default:
+                throw new IllegalArgumentException("Unknown sensor type: " + sensorType);
         }
-        
-        // Getter and Setter methods
     }
-    ```
+}
+```
 
-#### Exercise 5: Integrating Tools and Gameplay Mechanics ⚙️
-- **Objective**: Integrate your custom tools into the game mechanics, allowing interaction.
-- **Task**:
-  - Develop a gameplay feature where certain rooms contain repair tools necessary for fixing the spaceship.
-  - Ensure the player must pick up and use these tools within rooms.
+---
 
-#### Exercise 6: Complete Game Creation and Testing 🧩
-- **Objective**: Combine all elements to create a fully functional game with a win/lose condition.
-- **Steps**:
-  - Implement the logic for 'repairing' the spaceship.
-  - Add a win condition when repairs are completed within specific rounds.
-  - Create a README with a game map and a description of how to play.
+## 🚀 Exercise 6: Creative Expansion and User Interaction
 
-### Submission
+**Objective:** Encourage creative programming and user interaction.
 
-- Submit a ZIP file containing your code, a room data file, and the README with game documentation and map.
-- Ensure the code is well-documented using Javadoc conventions.
+**Task:** Expand your WeatherStation application with additional features, focusing on user interaction and dynamic behavior.
 
-### Tips for Success
+- **Instructions:**
+  - Allow users to request forecasts based on location.
+  - Implement a simple console UI that displays weather data and forecasts.
+  - Encourage experimenting with new features like historical data analysis or predictions.
 
-- Start by understanding the file I/O operations deeply.
-- Design your classes with clear responsibilities.
-- Continuously test each component as you integrate them.
+---
 
-Embark on your cosmic journey and bring the spaceship back to life! 🌌
+### 🎉 Conclusion
+
+By completing these exercises, you've gained proficiency in using file data to instantiate objects, designed efficient and robust Java classes, and tapped into your creativity to enhance program functionality. Well done! Remember, the skills you've honed here will be invaluable as you tackle more complex programming challenges in your learning journey.
