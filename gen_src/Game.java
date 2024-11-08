@@ -10,7 +10,7 @@ import java.io.IOException;
 public class Game {
     private static GameState state;
     private static Scanner playerInput = new Scanner(System.in);
-    private static final String PROMPT = "> ";
+    private static final String PROMPT = ">> ";
 
     public static void main(String[] args) {
         generateSpaceshipLayout("Rooms.txt");

@@ -78,23 +78,25 @@ public class CommandParser {
     }
 
     public static void executeUseCommand(GameState state) {
-        String currentItemFunction = state.getHoldingRepairTool().getFunctionality();
-        String currentRoomObjective = state.getCurrentRoom().getObjective().getName();
-
         if (state.getHoldingRepairTool() == null) {
-            System.out.println("You do not have any repairtools for this action");
+            System.out.println("You do not have any repairtools for this action.");
+
         } else if (!state.getCurrentRoom().getObjective().isCompleted()) {
+            String currentItemFunction = state.getHoldingRepairTool().getFunctionality();
+            String currentRoomObjective = state.getCurrentRoom().getObjective().getName();
+
             if (currentItemFunction.equals(currentRoomObjective)) {
                 System.out.println("You have used your " + state.getHoldingRepairTool().getName() + " to repair the "
                         + currentRoomObjective + "!");
                 state.getCurrentRoom().getObjective().setCompleted(true);
                 state.addCompletedObjectives();
                 state.dropHoldingRepairTool();
+                
             } else {
                 state.setFailed(true);
             }
         } else {
-            System.out.println("The " + currentRoomObjective + " is already fixed.");
+            System.out.println("The " + state.getCurrentRoom().getObjective().getName() + " is already fixed.");
             System.out.println("See if there is something else you can do.");
         }
 

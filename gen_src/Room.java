@@ -7,8 +7,6 @@ public class Room {
     private Map<String, Room> exits = new HashMap<>();
     private String description;
     private RepairTool repairTool;
-
-
     private Objective objective;
 
     public Room(String description) {
