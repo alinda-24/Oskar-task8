@@ -1,31 +1,25 @@
-// File: RepairTool.java
+// RepairTool.java
 public class RepairTool {
     private String name;
     private String functionality;
 
-    // Constructor
     public RepairTool(String name, String functionality) {
-        this.name = name;
-        this.functionality = functionality;
+        // Constructor implementation
     }
 
-    // Getter for name
     public String getName() {
-        return name;
+        // Getter for name
     }
 
-    // Setter for name
     public void setName(String name) {
-        this.name = name;
+        // Setter for name
     }
 
-    // Getter for functionality
     public String getFunctionality() {
-        return functionality;
+        // Getter for functionality
     }
 
-    // Setter for functionality
     public void setFunctionality(String functionality) {
-        this.functionality = functionality;
+        // Setter for functionality
     }
 }
