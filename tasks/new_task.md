@@ -1,3 +1,5 @@
+![Task Image](https://oaidalleapiprodscus.blob.core.windows.net/private/org-asPC5Skb6EoE1i324HhdGnV1/user-4VyHdJuNDsg3rdcmO7ghXoi2/img-2wOJif7sC373z1Teub6lIR7Q.png?st=2024-11-08T13%3A58%3A58Z&se=2024-11-08T15%3A58%3A58Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-11-07T17%3A32%3A56Z&ske=2024-11-08T17%3A32%3A56Z&sks=b&skv=2024-08-04&sig=f3mu8LMNJLBZtBwZXIUlB0W%2BL%2Bej%2BMPQzwhdqQcN6FE%3D)
+
 # 🏗️ Advanced Object-Oriented Programming: Weather Station Simulation
 
 Welcome to the Weather Station Simulation task! In this task, you'll expand your understanding of object-oriented programming while engaging with file I/O operations to create a more dynamic and interactive program. The ultimate goal is to design a weather station application that reads data from a configuration file and simulates varying weather conditions. You'll design classes, manage file I/O operations to instantiate objects, and unlock your creativity by designing an intuitive system.
